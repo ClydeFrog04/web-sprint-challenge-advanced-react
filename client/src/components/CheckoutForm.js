@@ -19,15 +19,6 @@ const CheckoutForm = (props) => {
   //const [values, setValues] = useState(initialValue);
   const [values, clearForm, handleSubmit, handleChanges] = useForm("checkoutForm", initialValue, setShowSuccessMessage);
 
-  // const handleChanges = (e) => {
-  //   setValues({ ...values, [e.target.name]: e.target.value });
-  // };
-  //
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setShowSuccessMessage(true);
-  // };
-
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -68,7 +59,7 @@ const CheckoutForm = (props) => {
           Zip:
           <input name="zip" value={values.zip} onChange={handleChanges} />
         </label>
-        <button>Checkout</button>
+        <button data-testid="checkout">Checkout</button>
       </form>
 
       {showSuccessMessage && (
