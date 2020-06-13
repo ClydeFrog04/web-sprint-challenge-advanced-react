@@ -251,3 +251,52 @@ pre {
   color: #0e101c;
   border-bottom: 2px solid !important;
 }
+
+/*begin light mode styles*/
+
+.light-mode-toggle{
+    background: #004346;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 4px 0;
+    height: 20px;
+    position: relative;
+    width: 40px;
+}
+
+.toggle {
+    background: #e84855;
+    border-radius: 50px;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s;
+    width: 20px;
+}
+
+.toggled {
+    left: 18px;
+}
+
+.light-mode{
+    color: black;
+    background-color: #cecece;
+}
+
+form.light-mode{
+    background-color: #004346;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+li.light-mode{
+    background-color: #E84855;
+}
+
+button.light-mode{
+    background: #E84855;
+}
+
+button.light-mode:hover{
+    background: #F08700;
+}
