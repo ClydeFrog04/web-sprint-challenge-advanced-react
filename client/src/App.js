@@ -13,7 +13,7 @@ function App() {
     const [cart, setCart] = useState([]);
 
     //useLightMode
-    const [lightMode, setLightMode] = useLightMode(true);
+    const [lightMode, setLightMode] = useLightMode(false);
 
     // add a plant to the cart
     const addToCart = (plant) => {

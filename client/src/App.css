@@ -262,7 +262,8 @@ pre {
     border: 1px solid black;
     padding: 4px 0;
     height: 20px;
-    position: relative;
+    position: absolute;
+    right: 20px;
     width: 40px;
 }
 
