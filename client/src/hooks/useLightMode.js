@@ -11,6 +11,8 @@ const useLightMode = (enabled) => {
         document.querySelector("h1").classList.toggle("light-mode", isEnabled);
         document.querySelector("form").classList.toggle("light-mode", isEnabled);
         document.querySelector("button").classList.toggle("light-mode", isEnabled);
+        document.querySelector(".light-mode-toggle").classList.toggle("light-mode", isEnabled);
+        document.querySelector(".toggle").classList.toggle("light-mode", isEnabled);
         const btns = document.querySelectorAll("li");
         btns.forEach(btn => btn.classList.toggle("light-mode", isEnabled));
     }, [isEnabled]);
