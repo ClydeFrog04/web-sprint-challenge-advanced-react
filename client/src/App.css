@@ -242,6 +242,7 @@ pre {
     padding: 3px 15px;
     margin-right: 15px;
     position: relative;
+    border-radius: 4px;
 }
 
 .steps li:last-child {
